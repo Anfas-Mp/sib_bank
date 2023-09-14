@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+          <div class="row">
+            <div class="mx-auto">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="{% static 'assets/img/handshake.jpg'%}" alt="Card image cap" width="100%" height="800px">
+                    <div class="card-body">
+                      <a class="card-title" style="text-align:center;font-size:34px;color:rgb(255, 106, 0);font-style:normal;font-weight:bold">Form Submission was Successful</a>
+                      <br>
+                      <br>
+                      <a href="{% url 'bankingapp:index' %}" style="text-align:center;font-size:25px;color:rgb(0, 89, 255);font-style:normal">Return Home Page</a>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
