@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,6 +14,10 @@
           <div class="row">
             <div class="mx-auto">
                 <div class="card mb-3">
+                  {% if user.is_authenticated %}
+                  <li class="nav-item" style="color:rgb(255, 60, 16);font-size:34px;font-weight:bold"><u><a class="nav-link"
+                    href="{% url 'credentials:logout'%}">Logout</a></u></li>
+                  {% endif %}
                     <img class="card-img-top" src="{% static 'assets/img/handshake.jpg'%}" alt="Card image cap" width="100%" height="800px">
                     <div class="card-body">
                       <a class="card-title" style="text-align:center;font-size:34px;color:rgb(255, 106, 0);font-style:normal;font-weight:bold">Form Submission was Successful</a>

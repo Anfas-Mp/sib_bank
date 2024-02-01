@@ -35,7 +35,7 @@ class Person(models.Model):
         ('Other', 'Other')
     ]
     name=models.CharField(max_length=250,unique=True)
-    dob=models.DateField()
+    dob=models.DateField(null=True,blank=True)
     age=models.IntegerField()
     gender = models.CharField(choices=GENDER_CHOICES, max_length=200, null=True)
     phoneno = models.CharField(max_length=250,unique=True)

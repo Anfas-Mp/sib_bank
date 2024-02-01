@@ -9,7 +9,7 @@ class PersonCreationForm(forms.ModelForm):
             'name':forms.TextInput(attrs={'class':'form-control'}),
             'age': forms.NumberInput(attrs={'class': 'form-control'}),
             'email': forms.TextInput(attrs={'class': 'form-control'}),
-            'dob': forms.DateInput(attrs={'class': 'form-control'}),
+            'dob': forms.DateInput(attrs={'class': 'form-control','type':'date'}),
             'phoneno': forms.TextInput(attrs={'class': 'form-control'}),
             'address': forms.Textarea(attrs={'class': 'form-control'}),
             'gender': forms.Select(attrs={'class': 'form-control'}),
